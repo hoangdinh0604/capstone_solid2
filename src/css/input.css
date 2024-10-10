@@ -46,3 +46,25 @@ header {
     transform: translateX(20px);
   }
 }
+.trusted__img1 {
+  position: absolute;
+  top: -100px;
+  width: 300px;
+}
+.trusted__img2 {
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  width: 150px;
+}
+.trusted__content {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(96, 210, 255, 0.52),
+      rgba(255, 255, 255, 0.73)
+    ),
+    url("../img/dot.png");
+  background-size: cover; /* Ensures the image covers the whole area */
+  background-position: center; /* Centers the image */
+  border-radius: 10px;
+}
