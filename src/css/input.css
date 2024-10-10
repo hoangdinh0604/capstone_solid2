@@ -3,5 +3,30 @@
 @tailwind utilities;
 
 header {
-  position: sticky;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 99;
+}
+.banner__text h1 span {
+  position: relative;
+  z-index: 99;
+}
+.banner__text h1 span::before {
+  position: absolute;
+  bottom: 0;
+  background-color: #adfff8;
+  height: 10px;
+  z-index: -1;
+}
+.features__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.boilerplate__item {
+  line-height: 0;
+}
+.boilerplate__text {
+  margin-left: 40px;
 }
