@@ -35,3 +35,14 @@ header {
 .boilerplate__text {
   margin-left: 40px;
 }
+#knowmoreButton:hover span {
+  animation: leftToRight 0.3s;
+}
+@keyframes leftToRight {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}

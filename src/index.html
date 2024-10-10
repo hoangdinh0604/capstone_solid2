@@ -18,6 +18,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Animate Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body>
@@ -259,7 +264,9 @@
       id="brandBand"
       class="flex justify-between mt-10 bg-slate-100 border border-y-slate-300"
     >
-      <div class="w-36 h-36 flex justify-center items-center md:">
+      <div
+        class="w-36 h-36 flex justify-center items-center wow animate__animated animate__fadeInDown"
+      >
         <a href="#">
           <img
             class="opacity-50 hover:opacity-100"
@@ -268,7 +275,9 @@
           />
         </a>
       </div>
-      <div class="w-36 h-36 flex justify-center items-center">
+      <div
+        class="w-36 h-36 flex justify-center items-center wow animate__animated animate__fadeInDown"
+      >
         <a href="#">
           <img
             class="opacity-50 hover:opacity-100"
@@ -277,7 +286,9 @@
           />
         </a>
       </div>
-      <div class="w-36 h-36 flex justify-center items-center">
+      <div
+        class="w-36 h-36 flex justify-center items-center wow animate__animated animate__fadeInDown"
+      >
         <a href="#">
           <img
             class="opacity-50 hover:opacity-100"
@@ -286,7 +297,9 @@
           />
         </a>
       </div>
-      <div class="w-36 h-36 flex justify-center items-center">
+      <div
+        class="w-36 h-36 flex justify-center items-center wow animate__animated animate__fadeInDown"
+      >
         <a href="#">
           <img
             class="opacity-50 hover:opacity-100"
@@ -295,7 +308,9 @@
           />
         </a>
       </div>
-      <div class="w-36 h-36 flex justify-center items-center">
+      <div
+        class="w-36 h-36 flex justify-center items-center wow animate__animated animate__fadeInDown"
+      >
         <a href="#">
           <img
             class="opacity-50 hover:opacity-100"
@@ -304,7 +319,9 @@
           />
         </a>
       </div>
-      <div class="w-36 h-36 flex justify-center items-center">
+      <div
+        class="w-36 h-36 flex justify-center items-center wow animate__animated animate__fadeInDown"
+      >
         <a href="#">
           <img
             class="opacity-50 hover:opacity-100"
@@ -315,7 +332,9 @@
       </div>
     </section>
     <section id="features" class="container mt-24">
-      <div class="features__title text-center">
+      <div
+        class="features__title text-center wow animate__animated animate__fadeInDown"
+      >
         <h3
           class="font-medium text-black dark:text-white bg-teal-100 rounded-3xl w-40 mx-auto p-2 mb-10"
         >
@@ -330,7 +349,7 @@
           Donec vitae tortor lacus. Phasellus aliquam ante in maximus.
         </p>
       </div>
-      <div class="features__content">
+      <div class="features__content wow animate__animated animate__fadeInDown">
         <div class="features__item p-12">
           <a
             href="#"
@@ -452,10 +471,14 @@
       class="container boilerplate mt-40 overflow-hidden"
     >
       <div class="boilerplate__content flex justify-between">
-        <div class="relative boilerplate__img flex w-1/2">
+        <div
+          class="relative boilerplate__img flex w-1/2 wow animate__animated animate__fadeInLeft"
+        >
           <img class="z-10 shadow-2xl" src="./img/about-light-01.png" alt="" />
         </div>
-        <div class="boilerplate__text md:w-1/2 ml-10">
+        <div
+          class="boilerplate__text md:w-1/2 ml-10 wow animate__animated animate__fadeInRight"
+        >
           <h3 class="text-lg text-black dark:text-white font-semibold mt-4">
             <span class="bg-green-300 rounded-2xl p-2 text-white">New</span>
             SaaS boilerplate for Next.js
@@ -506,6 +529,59 @@
         </div>
       </div>
     </section>
+    <section id="launch" class="container launch mt-40 overflow-hidden">
+      <div class="launch__content flex justify-evenly">
+        <div
+          class="launch__text md:w-1/2 wow animate__animated animate__fadeInLeft"
+        >
+          <h3 class="text-lg text-black dark:text-white font-semibold mt-4">
+            Launch Your SaaS Fast
+          </h3>
+          <h1 class="text-6xl font-bold text-black mt-4 dark:text-white">
+            Packed with All <br />
+            Essential
+            <span class="highlighted__text">Integrations</span>
+          </h1>
+          <p class="text-lg text-black dark:text-white mt-4 mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+            ultricies lacus non fermentum ultrices. Fusce consectetur le.
+          </p>
+          <div
+            id="knowmoreButton"
+            class="flex hover:cursor-pointer transition-all duration-300"
+          >
+            <p class="hover:text-blue-600 transition-all duration-300">
+              Know More
+            </p>
+            <span class="transition-all duration-500"
+              ><i class="fa fa-arrow-right ml-3"></i
+            ></span>
+          </div>
+        </div>
+        <div class="wow animate__animated animate__fadeInRight">
+          <img class="z-10 shadow-2xl" src="./img/About.png" alt="" />
+        </div>
+      </div>
+    </section>
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <!-- SCRIPT -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- WOW JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
