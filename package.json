@@ -3,8 +3,9 @@
     "tailwindcss": "^3.4.13"
   },
   "scripts": {
-    "start": "npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch"
-  },
+    "start": "if not exist src\\js (mkdir src\\js) && copy .\\node_modules\\flowbite\\dist\\flowbite.min.js .\\src\\js\\ && npx tailwindcss -i .\\src\\css\\input.css -o .\\src\\css\\output.css --watch",
+    "build": "npx tailwindcss -i .\\src\\css\\input.css -o .\\dist\\css\\output.css --minify && if not exist dist\\js (mkdir dist\\js) && copy .\\node_modules\\flowbite\\dist\\flowbite.min.js .\\dist\\js\\ && if not exist dist (mkdir dist) && if not exist dist (mkdir dist) && robocopy src dist *.html /S && if not exist dist\\img (mkdir dist\\img) && copy .\\src\\img\\* .\\dist\\img\\"
+},
   "dependencies": {
     "flowbite": "^2.5.1"
   }
