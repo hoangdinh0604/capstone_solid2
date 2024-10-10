@@ -5,13 +5,20 @@ module.exports = {
     extend: {
       container: {
         center: true,
-        // padding: "2rem",
+        padding: "2rem",
+      },
+
+      backgroundColor: {
+        title2: "#f8f9ff",
+        title3: "#006bff",
+      },
+      colors: {
+        main02: "#757693",
+        btn: "#006bff",
       },
     },
   },
   mode: "jit",
   darkMode: "class",
-  plugins: [
-    require('flowbite/plugin')
-]
-}
+  plugins: [require("flowbite/plugin")],
+};

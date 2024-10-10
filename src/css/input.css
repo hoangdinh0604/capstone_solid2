@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.title span {
+  color: #757693;
+}
+
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50px);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100rem;
+  background-color: #cccccc;
+}
+
+.slick-dots button {
+  font-size: 0;
+}
+
+.slick-dots .slick-active {
+  width: 20px;
+  background-color: #007aff;
+}
+
+.content__buttom li {
+  margin-bottom: 20px;
+}
+
+.Popu {
+  rotate: 90px;
+}
